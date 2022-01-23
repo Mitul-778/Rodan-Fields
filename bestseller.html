@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Seller</title>
+    <link rel="icon" href="data:image/png;base64,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">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>   
+    <h1 style="text-align: center;">BEST SELLERS</h1>
+    <hr>
+    <button id='bot' onclick="window.location.href='cart.html'">Go To Cart</button>
+    <div id="maincontainer">
+    <div id="left">
+        <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"><B><h8>Sort: ▼</h8></B></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a onclick="sort4()">Price:Low To High</a>
+    <a onclick="sort5()">Price: High To Low</a>
+    <a onclick="sortby1()">Name: A To Z</a>
+    <a onclick="sortby3()">Name: Z To A</a>
+  </div>
+</div>
+
+    </div>
+    <div id="right">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<script>
+    var cartARR = [];
+var wishARR = [];
+var hebrew = [
+{name:"Eye Creame",imageUrl:"https://www.rodanandfields.com/en-us/medias/AAEY015-458x458.jpg?context=bWFzdGVyfGltYWdlc3wxMDQ2OHxpbWFnZS9qcGVnfGltYWdlcy9oMDYvaDljLzEzOTc3NTQ0NDI1NTAyLmpwZ3xiNzQ3NjJkOWU1Y2QxOWM5ZDQ4ZGQzZDA1ZjdkNzBhZmRhMjdkYzE5MTU0MWZiZjY5MDc3NzEyMjBkM2E1YThj",price:499, strikedOffPrice:599}
+,{name:"Lash Booster",imageUrl:"https://www.rodanandfields.com/en-us/medias/ENHLSH01-458x458.jpg?context=bWFzdGVyfGltYWdlc3w0MDkxfGltYWdlL2pwZWd8aW1hZ2VzL2gzNS9oODgvMTM5Nzc1NDQ2ODc2NDYuanBnfDlmYTEwMTFkMjFiNzMwYjlhNjU0NTNiYjU5ZDBmMGY3ZWIzNmNiZmYwMTJhMGYzMTFkMzA1ODhkOGI1MjdlMmE",price:599, strikedOffPrice:699}
+,{name:"RF Serum",imageUrl:"https://www.rodanandfields.com/en-us/medias/ENFM030-Global-208x208-Mobile.jpg?context=bWFzdGVyfGltYWdlc3w2MTE2fGltYWdlL2pwZWd8aW1hZ2VzL2gzYi9oZDQvMTM2OTM5NjU0Njc2NzguanBnfDgzNDMyMjQ4MDFiZjRhZTNjNmY2Y2NjOTA0ZWYzMzg5NGVjMTIzZjk2Y2MzMWJlZmUzMDgxNzZmMTViOTM4ZmM",price:699, strikedOffPrice:799}
+,{name:"Hydration Serum",imageUrl:"https://www.rodanandfields.com/en-us/medias/ENHEFG1-458x458.jpg?context=bWFzdGVyfGltYWdlc3w1NDcyfGltYWdlL2pwZWd8aW1hZ2VzL2hmMi9oZGMvMTM5Nzc1NDQxNjMzNTguanBnfDAyOGIxODUwZTRiZDYyMzgyZWU5ZjI1YWZiZjE3MTVkMTM0YzY1MWU3MzE4NDk5YzAyMTMwODU1MGY1NzA4NmU",price:799, strikedOffPrice:899}
+,{name:"REDEFINE Regimen",imageUrl:"https://www.rodanandfields.com/en-us/medias/HAAGR-458x458.jpg?context=bWFzdGVyfGltYWdlc3w5MjA3fGltYWdlL2pwZWd8aW1hZ2VzL2gzZC9oMzMvMTM5Nzc1NDM5MDEyMTQuanBnfDU5YTY2OWVkYTZjODM5NzY4YTVhZmJlMGNjZDQzNDU1MzUzMWY2MmUzMzY4ZTkxMTgyMWIwYThkNjYxZGRjMzc",price:899, strikedOffPrice:999}
+,{name:"Body Replenish",imageUrl:"https://www.rodanandfields.com/en-us/medias/ENBR001-458x458.jpg?context=bWFzdGVyfGltYWdlc3w3Nzc0fGltYWdlL2pwZWd8aW1hZ2VzL2g3MS9oMmQvMTM5Nzc1NDMzNzY5MjYuanBnfDMxMTEyY2E3ZDMzNTVjZDA0OGRmODE4NTk4NmNkZjcyMTQwNGM3NDMxNTRkNGEyNTI5MDI2ZTM4OWRkZmEzMzc",price:999,strikedOffPrice:1049}
+,{name:"Clarifying Mask",imageUrl:"https://www.rodanandfields.com/en-us/medias/UNRMF50-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0MTg2NnxpbWFnZS9qcGVnfGltYWdlcy9oN2MvaDk2LzEzNjE1ODgxMzg4MDYyLmpwZ3w0ZGE1ZWNiZWI1OTdiYmFkMjY3ZWU3ZWVmMDBkZjdlOWYzMDY4MGUwYWE4NTZiZTZjN2M3YjUxN2M2NmYxYjhk",price:399, strikedOffPrice:499}
+]  
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+function sortby1(){
+    document.querySelector("h8").innerHTML="sorted-a to z"
+    hebrew.sort(function (a,b){
+    if(a.name>b.name) return 1;
+    if(b.name>a.name) return -1;
+    return 0;
+  })
+  displayData(hebrew)
+    }
+function sortby3(){
+    document.querySelector("h8").innerHTML="sorted-z to a"
+    hebrew.sort(function (a,b){
+    if(a.name>b.name) return -1;
+    if(b.name>a.name) return  1;
+    return 0;
+  })
+  displayData(hebrew)
+    }  
+function sort4(){
+    document.querySelector("h8").innerHTML="sorted-low to high"
+    hebrew.sort(function (a,b){
+        return Number(a.price) - Number(b.price)
+      })
+      displayData(hebrew)
+}      
+function sort5(){
+    document.querySelector("h8").innerHTML="sorted-high to low"
+    hebrew.sort(function (a,b){
+        return Number(b.price) - Number(a.price)
+      })
+      displayData(hebrew)
+}      
+displayData(hebrew)
+function displayData(hebrew){
+  document.querySelector("#right").innerHTML=""
+  hebrew.map(function (data) {
+
+
+    var div = document.createElement("div")
+    div.setAttribute("id","item")
+    var h5 = document.createElement("h5")
+    h5.innerHTML="Bestseller"
+    var img = document.createElement("img")
+    img.setAttribute("src",data.imageUrl)
+    var p = document.createElement("p")
+    p.innerText=data.name
+    var p1 = document.createElement("p")
+    p1.innerText="Rewind Eraser Dark Circles"
+
+    var div1 = document.createElement("div")
+    div1.setAttribute("id","price")
+    var p2 = document.createElement("p")
+    p2.setAttribute("id","p1")
+    p2.innerText="$"+data.price+" |"
+    var p3 = document.createElement("p")
+    p3.setAttribute("id","red")
+    p3.innerText="$"+data.strikedOffPrice;
+    
+    div1.append(p2,p3)
+
+    var div2 = document.createElement("div")
+    div2.setAttribute("id","focus")
+    var div3 = document.createElement("div")
+    div3.setAttribute("id","bab")
+    div3.innerHTML="<h6>♡</h6>"
+    div3.addEventListener("click",function(){
+      functiona(data)
+    })
+    var div4 = document.createElement("div")
+    div4.setAttribute("id","bac")
+    div4.addEventListener("click",function(){
+        functionad1(data)
+    })  
+    div4.innerHTML="<h6>ADD TO BAG</h6>"
+    div2.append(div3,div4)
+    div.append(h5,img,p,p1,div1,div2)
+
+    document.querySelector("#right").append(div)
+  }
+  )}
+
+    function functionad1(data){
+        cartARR.push(data)
+        localStorage.setItem("cartARR",JSON.stringify(cartARR))        
+    }
+    function functiona(params) {
+      wishARR.push(params)
+      localStorage.setItem("wishARR",JSON.stringify(wishARR))
+      console.log(wishARR)
+    }
+    
+</script>

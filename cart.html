@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAilBMVEX///9XVltXV1lOTlDk5OTh4eFXVlxZWVvCwsSenp9YV1tTUlVvb3BOTk5aWV76+vq+vsDw8PCSkpVkZGZycnRdXV+4uLhSUVb///v9/f/29vbb29ySkZdgYGBOTVJISEhvbnOKiop9fX/U1NR2dnagoKLJycuwsLJjYmdHRkqCgYampqaNjY1KSkqa+btrAAAG7ElEQVR4nO2ciWKiOhRAIYiphkXBiGBt7abz7Pj/v/duACsoCZQy9XbmnmlHi0ByyEI2sUbWXwKJYINEsEEi2CARbJAINkgEGySCDRLBBolgg0SwQSLYIBFskAg2SAQbJIINEsEGiWCDRLBBItggEWyQyPcTGj8lkVsQGmT0ItkdNnZ3d/MeIms/ARw8+MBLHxFhA4JhQXD4XfcWsW8d/wpc+L1EWABMORp85rO/IkX8jewncnwAbl3CK0BZP/Yp7Piq39msV/X7wyARbJAINkgEGySCDRLBBolgg0SwQSLYIBFskAg2/gWR0ApD85zExe7NpJnVchr4OLXStHcIOYOkSKg3LrenVqY9tHMolpX1mR/5BMa45DHVXvGwbSaqvnMfkdGrt916rSyi/Xquj43a7o5c1800WSedH9oDKXk1SBpE4gfbnrYOLQvusHhpzODPUjK+1qVIGHccxN74j/1SRNpJMO4WhngyZXWPsbF+HD30eEcTftSHYRYRwdjuwkPgRIaL5alY6EW2pUhLICDy2FuEdxNJgoAbag0EIh1TxA6CZKk5zWplFll9hwiUkRq2PbZPb8cfbwHY76APwySyOqdIPSj1U4RXvKqpsy+KBHYURff399F9VFK+OcROkF8slW5eP5GysEP9CCFtzzRVvvGroUZpF7F/xdp5olH8kbm2XxRRV2ymP8dpZ3109Z8UIkESaETUffblYTiRJNm3Nbi+kiKQeQwi8yFFAl2FcQrP1PpsFYEaqVlEnTSzBk2Rlqxlamq1igSJNkVyBhQZB3tj+zH7Wtayv09EmLOWGRLJ40Ai1ZN8m4juPqIiMXcKjyT46p0dRLTttS60idhBkmhEMkiRt6KjwKRzFqlXLfDXlnEumjtWaUVEOsuwTvaJwY8OIoHcz5pY7vZPvFwGJVgpErrLy/12kknOrs+xK48oRWwp4kW8qOItJoOKJLZa3ZiISxzh8KIvLBl7Lg+bHYXPzvsw4UhHcMmujhaLtJYi0PsR0Cc+9zrVIQOKQBkpisFl970SqpBcvBVHZTN/U9tLOchSto5XtDg+RGqnVAc4HDqeg4lAggRFU/0yIswBAdUhgjLC+GlJ2AwSpBoboTQd2KG2eQxHxVY9RbgjmFPpv8fgPpxIAG2tUw17eVk540pFcEcKLywL853P/cpCxKksr7O8XB2pSlUtRSSrj0LAX3LAFDmTQOjVK5YnBCBZ7Mj1aSRxp8a6zr0h6CG9KhXnqqu0KEdezmVELc2tmsK/AVMEEkSlCrwIlQL1C6aiqNS8tVWOiWbhFdlCZcOX6+3FIWcRyeVFQRJDlhGVFnmlxaEWqQYEtRbUXIzHz/taC7s+ygt9pYVasru+GvwNi99zYVeXRFaAxB5OZDoN7F+7dcmykrXi2Uhtckfz1ArTsIx/GbuaFcRUNK2hzupZi/H39aiKC+ceTAQSJNl+nC7d50W8SBAvj5uqd7Li9Rz1WnQtNSbaJBLW7+xT56JjlVbO+mURNRRTbaLsNlAnndJkWQa0WhnD6NjWsvNG42rVcjZddPWfNLd+VfValnYh3jWzHnW6irBvFbHWp1u3kMI+dJneQCkChXp0qn7FdCq8UbsJShGl4uaVMNyyBPwnd60lEqkIMFdRg0aUUmHQi0jNU4F4RcAEmldKYwq3/f/ewjQ15S+8IqE1f3bKUqKmFA4jy2SCVwTInoUqIQKiIIJk+2K6d91cZFq2fq9EVJmwDtDV4CABd//xONgZSvytb4jqdiFV23rT3OKZwI1R2sU8z6/xWz4a3JDBwlxE+8W7MNwG+Umg47b8xJz7VXT1n8i8WQUtEt1w0ASqrmKiR+XBQ9Y8Wp6LcOY2n2NlhYs8/6pG47K/h1EEEkNs2IZpx7Xe/dPEX5IE+b2xUeRVdb7WzZFcWdmi6IJCF6F9okePOWtBgvjM182PhNaSnTSg/+hvXhqyBmzxfOHrv0GYbYvRSuYf/8wA3XwyiSbR7yiaTJqbhtDDC5f5ZGKxW/Q0uS4Iyuxd7aMJCHoy77+LKcnf0a6PQYlxmdPlG90OBtpX/3RY39SFf2Hh2c+CRLBBItggEWyQCDZIBBskgg0SwQaJYINEsEEiN8A4IvOTRHouYMaHcUHdTxKx+i3yXx/VY/jU87nKn/Jt/q54PW/8js8fHx/7PRWwmISeooEx6WsmJ8wi+ZKmYuoi/6rLrV8dxvs9FTBfqWGjQU1yHPs93jBfyjfGglrK0y9r+dcrXG8KE/qZyJaJHnRE9FTAnwOJYINEsEEi2CARbJAINkgEGySCDRLBBolgg0SwQSLYIBFskAg2SAQbJIINEsEGiWCDRLBBItggEWzoV6n8MNzPPIAeMzvXXbt/Af8DDdO26ja5nfIAAAAASUVORK5CYII=">
+    <script
+      src="https://kit.fontawesome.com/6deb308963.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <!------------------ Navigation Bar ------------------->
+    <div class="nav-bar">
+        <div class="left-nav">
+          <p onclick="window.location.href='consult.html'">find a consultant</p>
+        </div>
+        <div class="mid-nav">
+          <img
+            src="https://www.rodanandfields.com/en-us/medias/rf-logo.svg?context=bWFzdGVyfGltYWdlc3w3MzczfGltYWdlL3N2Zyt4bWx8aW1hZ2VzL2g2MC9oYWIvODgyMjE0NzE4NjcxOC5zdmd8YjNmMmU2YTg5MTM0NTMzM2Y2ODg2ZmRkZTJhNmY2OWZhYmYyYjk5NWQxODkxODFiYjVkY2MxY2NjOWRlMzA5OA"
+            alt=""
+          />
+        </div>
+        <div class="right-nav">
+          <button>  <input type="text" placeholder="Search.."><i onclick="window.location.href='resi.html'" class="fas fa-search"></i>
+          </button>
+          <button>
+            Sign in <span><i onclick="window.location.href='SIGNUP2.html'" class="far fa-user"></i></span>
+          </button>
+          <button>
+            Cart <span><i onclick="window.location.href='cart.html'" class="fas fa-shopping-bag"></i></span>
+          </button>
+          <div id="google_translate_element"></div>
+        </div>
+      </div>
+      <div class="menu-bar">
+        <nav>
+          <ul id="nav_list1">
+            <li><a href="resi.html">SHOP</a></li>
+            <li><a href="bestseller.html">BEST SELLERS</a></li>
+            <li><a href="#">FEATURED</a></li>
+            <li><a href="#">PERKS PROGRAM</a></li>
+            <li><a href="rodan.html">BECOME A CONSULTANT</a></li>
+            <li><a href="#">BLOG</a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+    <div class="review"><h1>Review your bag</h1></div>
+    <div class="checkout">
+        <div id="container2">
+        </div>
+    <div id="checkout">
+        <div class="summ">Order Summary</div>
+    <div class="flex"><p>Subtotal </p>
+        <p class="sub"></p>
+    </div>
+    <p class="zero">Free shipping within 25 mile radius</p>
+    <div><button id="dist" onclick="functiondist()">distance</button>
+    <input type="number" class="dist" placeholder="HQ to location in miles" value=""></div>
+    <div class="flex"><p>Shipping Charges</p><p class="ship"></p></div>
+    <p>Apply <u><b>RODAN15</u></b> to get 15% discount</p>
+    <hr>
+    <div class="flex">
+        <h3 class="flex">Enter distance to proceed</h3>
+    </div>
+    <hr><br>
+    <input id="offers" type="text" placeholder="Enter Promo Code" disabled=true><button onclick="offer()" id="offer">Submit</button><br><br><br>
+    <button class="con" onclick="window.location.href='home.html'">Continue Shopping</button>
+    <button class="check-btn" onclick="window.location.href='checkout.html'">Checkout</button>
+    </div>
+    </div>
+    <div class="best">
+        
+    </div>
+</div>
+<!----------------- Footer --------------------->
+<footer class="footer">
+    <div class="row">
+      <div class="footer-col">
+        <h4>ABOUT R+F</h4>
+        <ul>
+          <li><a href="#">Press room</a></li>
+          <li><a href="#">company info</a></li>
+          <li><a href="#">executive team</a></li>
+          <li><a href="#">careers</a></li>
+          <li><a href="#">R+F RECYCLING PROGRAM</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>HELP</h4>
+        <ul>
+          <li><a href="#">PRODUCT & HELP CENTER</a></li>
+          <li><a href="#">SHIPPING</a></li>
+          <li><a href="#">SATISFACTION GUARANTEE</a></li>
+          <li><a href="#">PROMOTIONAL TERMS & CONDITIONS</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Let's Get Social</h4>
+        <div class="social-links">
+          <h1>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </h1>
+          <h1>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </h1>
+          <h1>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </h1>
+          <h1>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <hr />
+  <div class="right">
+    <p>© 2021 Rodan & Fields</p>
+    <p>Privacy Policy</p>
+    <p>Terms & Conditions</p>
+    <p>Accessibility</p>
+    <p>California Supply Chains Act</p>
+    <p>DSA Code Of Ethics</p>
+    <p>Disclaimer</p>
+    <p>Preference Center</p>
+  </div>
+</body>
+</html>
+<script>
+    cartARR= JSON.parse(localStorage.getItem("cartARR"))||[]
+ cartARR.map(function (data) {
+  var div = document.createElement("div");
+  div.setAttribute("id","flex")
+  //img,name,price,strikedoffprice
+
+  // image creation
+  var image = document.createElement("img");
+  image.setAttribute("src", data.imageUrl);
+
+  // name creation
+
+  var name = document.createElement("p");
+  name.textContent = data.name;
+
+  // price creation
+
+  var div2 = document.createElement("div");
+  div2.setAttribute("class", "flex");
+
+  var p1 = document.createElement("p");
+  p1.textContent = "$"+data.price;
+
+  var p2 = document.createElement("p");
+  p2.textContent = data.strikedOffPrice;
+  p2.setAttribute("id","strike")
+  // p2.style.textDecoration = "line-through";
+
+  div2.append(p1, p2);
+
+  //append
+  div.append(image, name, div2);
+  document.querySelector("#container2").append(div);
+ });
+ var total = cartARR.reduce(function(ac,cv){
+    return ac+Number(cv.price);
+ },0)
+    document.querySelector(".sub").innerText= total
+    function functiondist(){ 
+        var x = Number(document.querySelector(".dist").value)
+         if(x==""){
+             document.querySelector("#offers").disabled=true
+         }
+         else{
+            document.querySelector("#offers").disabled=false
+            if(x<=25){ 
+            document.querySelector("h3").innerHTML="Total " +Number(total);
+            total = total;
+            document.querySelector(".ship").innerHTML="Free"
+         }
+         else if(x<=50){
+             document.querySelector("h3").innerHTML="Total "+Number(total+25)
+             total = total + 25;
+             document.querySelector(".ship").innerHTML=25
+         }
+         else{
+             document.querySelector("h3").innerHTML="Total "+Number(total+50)
+             total = total+50;
+             document.querySelector(".ship").innerHTML=50
+         }
+        }
+}
+    function offer(){
+  var offers = document.getElementById("offers").value
+  if(offers=="RODAN15"){
+    total1 = (total-(0.15*total))
+    document.querySelector("h3").innerHTML="Total "+ total1.toFixed(2);
+    alert("Promo Applied !")
+  }
+  else{
+    total1 = (total)+25;
+    alert("Not a valid code")
+    document.querySelector("h3").innerHTML="Total "+total1
+  }
+}
+</script>
+</script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+  </script>
+  
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

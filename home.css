@@ -1,0 +1,560 @@
+/*********** Navigation Bar *************/
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Gideon+Roman&display=swap");
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: baseline;
+  border-bottom: 1px solid black;
+  padding: 20px 10px;
+  height: 50px;
+}
+i{
+    cursor: pointer;
+    display: flex;
+}
+a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+body{
+    top: 0px !important; 
+    position: static !important; 
+    }
+    
+    .goog-te-banner-frame{
+    display:none !important
+    }
+    #google_translate_element {
+      color: transparent;
+    }
+    #google_translate_element a {
+      display: none;
+    }
+    div.goog-te-gadget {
+      color: transparent !important;
+    }
+
+    
+.left-nav {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: HCoGothamSSmSemiBold, Arial, Sans-Serif;
+  letter-spacing: 0.2rem;
+  width: 30%;
+}
+.mid-nav {
+  display: block;
+  width: 30%;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10%;
+}
+.mid-nav > img {
+  width: 80%;
+}
+.right-nav {
+  display: flex;
+  justify-content: end;
+  width: 700px;
+}
+button {
+  margin-right: 10px;
+  border: none;
+  background-color: white;
+  font-size: 15px;
+  font-family: HCoGothamSSmSemiBold, Arial, Sans-Serif;
+  color: gray;
+}
+#nav_list1 {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  text-decoration: none;
+  box-shadow: 0px 3px 10px -8px rgba(0, 0, 0, 0.87);
+  list-style: none;
+  font-size: 1rem;
+  font-family: HCoGothamSSmSemiBold, Arial, Sans-Serif;
+}
+#nav_list1 > li {
+  margin: 20px 40px;
+}
+a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+#nav_list1 > li > a:hover {
+  color: #000;
+}
+
+#nav_list1 > li > a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  margin: -20px 0px;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+#nav_list1 > li > a:hover::before {
+  transform: scaleX(1);
+}
+
+/*************** Banner Page *************/
+.bg-image {
+  width: 100%;
+}
+.text {
+  position: absolute;
+  top: 22rem;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.text > h1 {
+  font-family: "Gideon Roman", cursive;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #222;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+  width: 500px;
+}
+.text > p {
+  font-family: ProximaNovaRegular, Arial, Sans-Serif;
+  font-size: 25px;
+  width: 450px;
+  text-align: justify;
+}
+#shop1-btn {
+  width: 300px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: ProximaNovaRegular, Arial, Sans-Serif;
+  color: #222;
+}
+#shop1-btn:hover {
+  border: 0;
+}
+
+/************* Item Card ***********/
+.gallery {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  height: 750px;
+  /* border: 1px solid red; */
+}
+.image-div {
+  width: 30%;
+  /* border: 1px solid red; */
+  height: 740px;
+  background: seashell;
+}
+.item-gall {
+  /* border: 1px solid green; */
+  width: 70%;
+  background: seashell;
+  height: 750px;
+}
+.image-div > h1 {
+  position: absolute;
+  width: 250px;
+  font-family: "Gideon Roman", cursive;
+  font-size: 3rem;
+  line-height: 1.2;
+  left: 40px;
+  font-weight: 300;
+}
+.image-div > img {
+  margin-top: 350px;
+}
+.image-div > a {
+  position: absolute;
+  bottom: -600px;
+  left: 40px;
+  font-size: 25px;
+  text-decoration: underline;
+}
+.wrapper {
+  height: 740px;
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  margin-top: 10px;
+  cursor: grab;
+  background: white;
+  /* border: 1px solid rebeccapurple; */
+}
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+.wrapper .image {
+  min-width: 200px;
+  height: 400px;
+  line-height: 100px;
+  text-align: center;
+}
+.progress-bar {
+  position: absolute;
+  bottom: -960px;
+  left: 0;
+  width: 90%;
+  height: 4px;
+  border: 1px solid gray;
+  margin-left: 40px;
+  border-radius: 10px;
+}
+.progress-bar-in {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100%;
+  background-color: gray;
+}
+.card {
+  width: 400px;
+  height: 700px;
+  padding: 20px;
+}
+.card > button {
+  margin-left: 270px;
+  width: 120px;
+  height: 40px;
+  border: 1px solid gray;
+  font-size: small;
+}
+
+.card > img {
+  text-align: center;
+  width: 220px;
+  height: 300px;
+  margin-left: 60px;
+}
+#shop-btn {
+  margin-left: 100px;
+}
+h3 {
+  font-family: ProximaNovaMedium, Arial, Sans-Serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  height: 40px;
+  margin-bottom: 0px;
+}
+.para {
+  font-family: ProximaNovaRegular, Arial, Sans-Serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  height: 36px;
+  margin-bottom: 40px;
+}
+.card + h3 {
+  font-family: HCoGothamSSmRegular, Arial, Sans-Serif;
+}
+.retail {
+  margin: 0 0 40px 0;
+  font-family: ProximaNovaRegular, Arial, Sans-Serif;
+  font-size: 14px;
+  line-height: 0px;
+}
+.rating {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+#shop-btn {
+  height: 3.5rem;
+  font-family: ProximaNovaRegular, Arial, Sans-Serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+  margin: 20px auto;
+  border: 1px solid black;
+  line-height: 2;
+}
+#shop-btn:hover {
+  box-shadow: none;
+  border: 1px solid black;
+}
+/************* Swap Cards ***********/
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+#container1 {
+  background-color: seashell;
+  width: 100%;
+  padding: 10px 0 50px 0;
+  margin-top: 80px;
+}
+.image-swap {
+  width: 95%;
+  height: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 450px);
+  margin-bottom: 0;
+  margin: auto;
+  gap: 20px;
+}
+.image-swap > div {
+  border: 1px solid gray;
+  background-color: white;
+  border-radius: 10px;
+}
+#container1 > h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 40px 0 20px 0;
+}
+.image-swap > div > p {
+  font-family: ProximaNovaRegular, Arial, Sans-Serif;
+  text-align: center;
+  font-weight: 550;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  color: gray;
+}
+.image-swap > div > img {
+  border-radius: 10px;
+}
+#i1:hover {
+  content: url(https://www.rodanandfields.com/en-us/medias/Category-Image-1.png?context=bWFzdGVyfHJvb3R8MzcxNDI1fGltYWdlL3BuZ3xoOGIvaDJiLzEzOTAwNTk3MTMzMzQyLnBuZ3w5NTMwMDY2NDkxOTRmNDI1Mjc5ZjIyOTYxYjUyZTFiNDkyNDZhODZmNTJlZmQ4ZjU4NzBmZjI2NzFiMzhmZTMy);
+}
+#i2:hover {
+  content: url(https://www.rodanandfields.com/en-us/medias/Category-Image-2.png?context=bWFzdGVyfHJvb3R8Mzg1Mjk1fGltYWdlL3BuZ3xoOGUvaGI2LzEzOTAwNTk3MTk4ODc4LnBuZ3xmYzY3MThiYTcyZTNiMjhjNTI4MGZjNTUxMTY5OTgwNjFhMWQzM2Y0ZWQyZjJjMTUwOGEwYjBmM2Y1NjVlMTI3);
+}
+#i3:hover {
+  content: url(https://www.rodanandfields.com/en-us/medias/Category-Image-3.png?context=bWFzdGVyfHJvb3R8MzU2OTI0fGltYWdlL3BuZ3xoNDMvaGJkLzEzOTAwNTk3MjY0NDE0LnBuZ3xhMWMzNDBiMGI0MWJmNjkwMDk2NDc0NGMxMjc4ZjljYzMzODYyYTRmNGUyNjFiYjZlOWZhOWM4ZmUzYTFjZmYz);
+}
+#i4:hover {
+  content: url(https://www.rodanandfields.com/en-us/medias/Category-Image-4.png?context=bWFzdGVyfHJvb3R8MzEzMzg3fGltYWdlL3BuZ3xoYjIvaDMwLzEzOTAwNTk3MzI5OTUwLnBuZ3xlOGYwOTgwZmYxNWIzNGVhNjZiN2I1NGI0NWVmZTFhOGQwYmJlOGMzZjE5NzA4ODRjNjZlMzliZDAzZjVhNDk0);
+}
+#i5:hover {
+  content: url(https://www.rodanandfields.com/en-us/medias/Category-Image-5.png?context=bWFzdGVyfHJvb3R8MjU0NDM1fGltYWdlL3BuZ3xoYjAvaGY4LzEzOTAwNTk3Mzk1NDg2LnBuZ3xlMmE5ZWIyN2YyYTVjZjZiZTVkZmUyZjJjODhmY2Q5MTdmMWM0NWQ1NTQ4MzFmZjM3YjUyNWI3M2NhYjI3ZTll);
+}
+#i6:hover {
+  content: url(https://www.rodanandfields.com/en-us/medias/Category-Image-6.png?context=bWFzdGVyfHJvb3R8Mzc1MzQ5fGltYWdlL3BuZ3xoMjEvaDdiLzEzOTAwNTk3NDYxMDIyLnBuZ3xkNjNjZjczZWMzYzM4MDIyMjA1NzIwOTgwZDM0YTU4MGIzMmY1YmZlZGM2Y2I5ODdmZWU4NDEzMjAxOTgxZGY0);
+}
+#container1 > button {
+  width: 26rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  border-radius: 5px;
+  font-family: ProximaNovaRegular, Arial, Sans-Serif;
+  font-size: 1.4rem;
+  border: 1px solid black;
+  margin: auto;
+}
+/************ cards ************/
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Gideon+Roman&display=swap");
+.container2 {
+  display: flex;
+  gap: 20px;
+  height: 300px;
+  margin: 40px 20px 20px 20px;
+}
+.container2 > div {
+  width: 50%;
+}
+.card1,
+.card2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+.card1 > div > h1,
+.card2 > div > h1 {
+  width: 200px;
+  font-family: "Gideon Roman", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.card1 > div > p,
+.card2 > div > p {
+  width: 250px;
+  font-family: ProximaNovaRegular, Arial, Sans-Serif;
+}
+.card1 > div:nth-child(1) {
+  padding: 20px;
+  background-color: seashell;
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+.card1 > div > a,
+.card2 > div > a {
+  font-family: ProximaNovaRegular, Arial, Sans-Serif;
+  font-size: 1.4rem;
+  color: #222;
+  text-decoration: underline;
+}
+.card2 > div:nth-child(1) {
+  background-color: hsl(107, 34%, 83%);
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+#rodan{
+     font-family: 'Nunito Sans', sans-serif;
+     font-size: 40px;
+     font-weight: 400;
+}
+/************ Slide Show ***********/
+.container3{
+    background: seashell;
+    width: 100%;
+    margin: 40px 20px;
+}
+.img-slider{
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: auto;
+}
+.img-slider>img{
+    border-radius: 5px;
+}
+.img-slider::-webkit-scrollbar {
+    display: none;
+  }
+/******************** LAst CArd ***********************/
+.container4{
+    background: #E1EAF1;
+    width: 100%;
+    height: 280px;
+    margin-top: 50px;
+    padding: 20px 0 50px 0;
+}
+.consult{
+    width: 80%;
+    background: white;
+    height: 260px;
+    margin:auto;
+    border-radius: 10px;
+}
+.consult>h1{
+    font-family: "Gideon Roman", cursive;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+.consult>ul{
+    font-family: ProximaNovaRegular,Arial,Sans-Serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+.consult>button{
+   text-transform: uppercase;
+   font-family: ProximaNovaRegular,Arial,Sans-Serif;
+   font-size: 1.4rem;
+   height: 3.4rem;
+   margin: 20px  0 0 40% ;
+   color: #222;
+   background: white;
+   border-radius: 5px;
+   border: 1px solid black;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.consult>button:hover{
+    box-shadow: none;
+}
+/********* Footer ********/
+.footer{
+  text-transform: uppercase;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 70px 70px;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  border-top: gray;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-col{
+  width: 25%;
+  padding: 0 30px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: rgb(104, 101, 101);
+  margin-bottom: 35px;
+  font-weight: bolder;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+ul{
+  list-style-type: none;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 300;
+  color: gray;
+  display: block;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #222;
+  padding-left: 8px;
+}
+.social-links a{
+  margin-left: 20px;
+  background-color: rgba(255, 255, 255, 0.2);   
+  line-height: 40px;
+  border-radius: 15%;
+  color: #222;
+  transition: all 0.5s ease;
+  
+}
+.social-links{
+  display: flex;
+  gap: 20px;
+}
+.social-links a:hover{
+  color: black;
+  background-color:#e91e63 ;
+}
+.right{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.right>p{
+  font-family:HCoGothamSSmLight,Arial,Sans-Serif ;
+  font-size: 1rem;
+  font-weight: 600;
+  border-left: 1px solid gray;
+  padding-left: 10px;
+  color: gray;
+}

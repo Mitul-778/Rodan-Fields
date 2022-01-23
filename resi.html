@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REGIMENS</title>
+    <link
+      rel="icon"
+      href="data:image/png;base64,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"
+    />
+    <link rel="icon" href="images/icon.png" />
+    <script
+      src="https://kit.fontawesome.com/6deb308963.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .body {
+        background-color: seashell;
+      }
+      /*********** Navigation Bar *************/
+      @import url("https://fonts.googleapis.com/css2?family=Alata&family=Gideon+Roman&display=swap");
+      .nav-bar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        vertical-align: baseline;
+        border-bottom: 1px solid black;
+        padding: 20px 10px;
+        height: 50px;
+        background-color: white;
+      }
+      i {
+        cursor: pointer;
+        display: flex;
+        color: black;
+      }
+      a {
+        position: relative;
+        color: #000;
+        text-decoration: none;
+      }
+
+      body {
+        top: 0px !important;
+        position: static !important;
+      }
+
+      .goog-te-banner-frame {
+        display: none !important;
+      }
+      #google_translate_element {
+        color: transparent;
+      }
+      #google_translate_element a {
+        display: none;
+      }
+      div.goog-te-gadget {
+        color: transparent !important;
+      }
+
+      .left-nav {
+        text-transform: uppercase;
+        font-size: 15px;
+        font-family: HCoGothamSSmSemiBold, Arial, Sans-Serif;
+        letter-spacing: 0.2rem;
+        width: 30%;
+      }
+      .mid-nav {
+        display: block;
+        width: 30%;
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 10%;
+      }
+      .mid-nav > img {
+        width: 80%;
+      }
+      .right-nav {
+        display: flex;
+        justify-content: end;
+        width: 700px;
+      }
+      button {
+        margin-right: 10px;
+        border: none;
+        background-color: white;
+        font-size: 15px;
+        font-family: HCoGothamSSmSemiBold, Arial, Sans-Serif;
+        color: gray;
+      }
+      #nav_list1 {
+        display: flex;
+        justify-content: center;
+        padding: 2px;
+        text-decoration: none;
+        box-shadow: 0px 3px 10px -8px rgba(0, 0, 0, 0.87);
+        list-style: none;
+        font-size: 1rem;
+        font-family: HCoGothamSSmSemiBold, Arial, Sans-Serif;
+        background-color: white;
+      }
+      #nav_list1 > li {
+        margin: 20px 40px;
+      }
+      a {
+        position: relative;
+        color: #000;
+        text-decoration: none;
+      }
+      #nav_list1 > li > a:hover {
+        color: #000;
+      }
+
+      #nav_list1 > li > a::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        margin: -20px 0px;
+        background-color: #000;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+      }
+
+      #nav_list1 > li > a:hover::before {
+        transform: scaleX(1);
+      }
+
+      #cont {
+        width: 90%;
+        margin: auto;
+        background-color: seashell;
+      }
+
+      .fontstyle {
+        font-family: HCoGothamSSmLight, Arial, Sans-Serif;
+        color: rgb(114, 110, 110);
+        margin-top: -10px;
+      }
+
+      #box1 {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        text-align: center;
+        background-color: white;
+      }
+      #box1:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      #productdiv {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 370px);
+        gap: 20px;
+        margin-top: 5px;
+      }
+
+      #formakingflex,
+      #buttonflex {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      #pic {
+        width: 100%;
+        height: 60%;
+      }
+      #namestyle {
+        text-align: center;
+        font-family: HCoGothamSSmRegular, Arial, Sans-Serif;
+        color: rgba(34, 34, 34, 0.87);
+      }
+      .txtheadfont {
+        font-family: BauerBodoniLight, Arial, Sans-Serif;
+        font-weight: 400;
+        color: #222;
+        text-transform: uppercase;
+      }
+      .offpricestyle {
+        font-size: 16px;
+        font-family: HCoGothamSSmLight, Arial, Sans-Serif;
+        color: #757575;
+        padding-right: 10px;
+      }
+      .pricestyle {
+        font-size: 16px;
+        font-family: HCoGothamSSmLight, Arial, Sans-Serif;
+        color: #272626;
+      }
+      .btn1style,
+      .btn2style {
+        border: 1px solid black;
+        height: 36px;
+        border-radius: 5px;
+      }
+      .btn1style:hover {
+        background-color: rgb(253, 249, 174);
+        border-radius: 5px;
+        border-style: hidden;
+      }
+      .btn2style:hover {
+        background-color: lightpink;
+        border-radius: 5px;
+        border-style: hidden;
+      }
+      .boxshadow {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background-color: white;
+      }
+      .boxshadow:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 5px;
+      }
+      #cartstyle,
+      #wishstyle {
+        height: 40px;
+        width: 130px;
+        margin: 5px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid black;
+        background-color: white;
+      }
+
+      body {
+        top: 0px !important;
+        position: static !important;
+      }
+
+      .goog-te-banner-frame {
+        display: none !important;
+      }
+      #google_translate_element {
+        color: transparent;
+      }
+      #google_translate_element a {
+        display: none;
+      }
+      div.goog-te-gadget {
+        color: transparent !important;
+      }
+      /********* Footer ********/
+      .footer {
+        text-transform: uppercase;
+        background-color: white;
+        box-sizing: border-box;
+        padding: 70px 70px;
+        line-height: 1.5;
+        font-family: "Poppins", sans-serif;
+        border-top: gray;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .footer-col {
+        width: 25%;
+        padding: 0 30px;
+      }
+      .footer-col h4 {
+        font-size: 18px;
+        color: rgb(104, 101, 101);
+        margin-bottom: 35px;
+        font-weight: bolder;
+        position: relative;
+      }
+      .footer-col h4::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+      }
+      ul {
+        list-style-type: none;
+      }
+      .footer-col ul li a {
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: 300;
+        color: gray;
+        display: block;
+        margin-bottom: 15px;
+        transition: all 0.3s ease;
+      }
+      .footer-col ul li a:hover {
+        color: #222;
+        padding-left: 8px;
+      }
+      .social-links a {
+        margin-left: 20px;
+        background-color: rgba(255, 255, 255, 0.2);
+        line-height: 40px;
+        border-radius: 15%;
+        color: #222;
+        transition: all 0.5s ease;
+      }
+      .social-links {
+        display: flex;
+        gap: 20px;
+      }
+      .social-links a:hover {
+        color: black;
+        background-color: #e91e63;
+      }
+      .right {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+      }
+      .right > p {
+        font-family: HCoGothamSSmLight, Arial, Sans-Serif;
+        font-size: 1rem;
+        font-weight: 600;
+        border-left: 1px solid gray;
+        padding-left: 10px;
+        color: gray;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!------------------ Navigation Bar ------------------->
+    <div class="nav-bar">
+      <div class="left-nav">
+        <p onclick="window.location.href='consult.html'">find a consultant</p>
+      </div>
+      <div class="mid-nav">
+        <img
+          src="https://www.rodanandfields.com/en-us/medias/rf-logo.svg?context=bWFzdGVyfGltYWdlc3w3MzczfGltYWdlL3N2Zyt4bWx8aW1hZ2VzL2g2MC9oYWIvODgyMjE0NzE4NjcxOC5zdmd8YjNmMmU2YTg5MTM0NTMzM2Y2ODg2ZmRkZTJhNmY2OWZhYmYyYjk5NWQxODkxODFiYjVkY2MxY2NjOWRlMzA5OA"
+          alt=""
+        />
+      </div>
+      <div class="right-nav">
+        <button>
+          <input type="text" placeholder="Search.." /><i
+            onclick="window.location.href='resi.html'"
+            class="fas fa-search"
+          ></i>
+        </button>
+        <button>
+          Sign in
+          <span
+            ><i
+              onclick="window.location.href='SIGNUP2.html'"
+              class="far fa-user"
+            ></i
+          ></span>
+        </button>
+        <button>
+          Cart
+          <span
+            ><i
+              onclick="window.location.href='cart.html'"
+              class="fas fa-shopping-bag"
+            ></i
+          ></span>
+        </button>
+        <div id="google_translate_element"></div>
+      </div>
+    </div>
+    <div class="menu-bar">
+      <nav>
+        <ul id="nav_list1">
+          <li><a href="resi.html">SHOP</a></li>
+          <li><a href="bestseller.html">BEST SELLERS</a></li>
+          <li><a href="#">FEATURED</a></li>
+          <li><a href="#">PERKS PROGRAM</a></li>
+          <li><a href="rodan.html">BECOME A CONSULTANT</a></li>
+          <li><a href="#">BLOG</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="body">
+      <button id="cartstyle" onclick="window.location.href='cart.html'">
+        Go to Bag
+      </button>
+      <button id="wishstyle" onclick="window.location.href='wishlist.html'">
+        Go to Wishlist
+      </button>
+      <div id="cont"></div>
+    </div>
+    <!----------------- Footer --------------------->
+    <footer class="footer">
+      <div class="row">
+        <div class="footer-col">
+          <h4>ABOUT R+F</h4>
+          <ul>
+            <li><a href="#">Press room</a></li>
+            <li><a href="#">company info</a></li>
+            <li><a href="#">executive team</a></li>
+            <li><a href="#">careers</a></li>
+            <li><a href="#">R+F RECYCLING PROGRAM</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>HELP</h4>
+          <ul>
+            <li><a href="#">PRODUCT & HELP CENTER</a></li>
+            <li><a href="#">SHIPPING</a></li>
+            <li><a href="#">SATISFACTION GUARANTEE</a></li>
+            <li><a href="#">PROMOTIONAL TERMS & CONDITIONS</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Let's Get Social</h4>
+          <div class="social-links">
+            <h1>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </h1>
+            <h1>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </h1>
+            <h1>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </h1>
+            <h1>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <hr />
+    <div class="right">
+      <p>© 2021 Rodan & Fields</p>
+      <p>Privacy Policy</p>
+      <p>Terms & Conditions</p>
+      <p>Accessibility</p>
+      <p>California Supply Chains Act</p>
+      <p>DSA Code Of Ethics</p>
+      <p>Disclaimer</p>
+      <p>Preference Center</p>
+    </div>
+  </body>
+</html>
+
+<script>
+  var textbox = document.createElement("div");
+  textbox.setAttribute("id", "box1");
+
+  var textboxheading = document.createElement("h2");
+  textboxheading.textContent = "REGIMENS";
+  textboxheading.setAttribute("class", "txtheadfont");
+
+  var theory = document.createElement("p");
+  theory.textContent =
+    "Our multi-step skincare Regimens target your primary skin concern. They’re easy to use and take the guesswork out of skincare by delivering our Multi-Med Therapy approach — the right ingredients, in the right formulations in the right order — for visible results.";
+  theory.setAttribute("class", "fontstyle");
+
+  var textboxheading2 = document.createElement("h2");
+  textboxheading2.textContent = "FACE SERUMS";
+  textboxheading2.setAttribute("class", "txtheadfont");
+
+  var theory2 = document.createElement("p");
+  theory2.textContent =
+    "Our face serums deliver powerful ingredients that target specific skin concerns, such as hydration or the appearance of wrinkles.";
+  theory2.setAttribute("class", "fontstyle");
+
+  var textboxheading3 = document.createElement("h2");
+  textboxheading3.textContent = "EYES, LIPS & LASHES";
+  textboxheading3.setAttribute("class", "txtheadfont");
+
+  var theory3 = document.createElement("p");
+  theory3.textContent =
+    "Our eyes, lips and lashes products are the perfect way to enhance your skincare Regimen. They target specific concerns, such as the appearance of dark under-eye circles, expression lines, aging lips and sparse lashes and brows.";
+  theory3.setAttribute("class", "fontstyle");
+
+  textbox.append(
+    textboxheading,
+    theory,
+    textboxheading2,
+    theory2,
+    textboxheading3,
+    theory3
+  );
+
+  document.getElementById("cont").append(textbox);
+
+  var data = [
+    {
+      imageUrl:
+        "https://www.rodanandfields.com/en-us/medias/TAXPSEG-1168x1168-desktop.jpg?context=bWFzdGVyfHJvb3R8NzQyMjZ8aW1hZ2UvanBlZ3xoYzYvaGYzLzkxNzEyNDU4OTE2MTQuanBnfDdiMDk2ZDM0ZjcxYjNiYzUwNzhmZWVjOTM1ZjM5OWU4MDlmYjAxMThiN2ZkYjQ4MGNhOGY5NmVlNTRlNTUxZTg",
+      name: "SPOTLESS POWER UP SPECIAL",
+      price: "200.00 ",
+      strikedOffPrice: "300.00",
+    },
+    {
+      imageUrl:
+        "https://www.rodanandfields.com/en-us/medias/HSORG001-SOWA125-SOTT050-SOMO050-SOSS050.jpg?context=bWFzdGVyfGltYWdlc3w1MDM0MnxpbWFnZS9qcGVnfGltYWdlcy9oMWIvaDNjLzEyNzcxNTg2NDA4NDc4LmpwZ3xkYzczYWVlNzhmMjA5MWYyOTRlNDVjZDgzN2RkM2E3MDhhZjdmZWJhMjMxZGUxMmE2NzNmYmJlODY5Y2VjYzVk",
+      name: "SOOTHE Regimen",
+      price: "200.00 ",
+      strikedOffPrice: "350.00",
+    },
+    {
+      imageUrl:
+        "https://www.rodanandfields.com/en-us/medias/HAAGRLP1-AAWA125-AATN125-AATT030-AAPM030-ENHLSH01.jpg?context=bWFzdGVyfGltYWdlc3wxMDE2NzJ8aW1hZ2UvanBlZ3xpbWFnZXMvaGE1L2g5ZC8xMjM5NjczMDk3NDIzOC5qcGd8MjJkYTlmNDhmNjg3ZjU0NzRlOWQxNWZlNTcwZTM5OGZmYzUwNWU4NTNmZWVlZTNlMWIzNWQwNjFmZmUyYmMzYw",
+      name: "REDEFINE + LASH BOOST SPECIAL",
+      price: "155.00 ",
+      strikedOffPrice: "350.00",
+    },
+    {
+      imageUrl:
+        "https://www.rodanandfields.com/en-us/medias/AASR160-1168x1168-DESKTOP.jpg?context=bWFzdGVyfHJvb3R8NjgyMjR8aW1hZ2UvanBlZ3xoOTUvaDZkLzg4MjE4NjMyODQ3NjYuanBnfDkzNTdjYWE5YjBmM2NkMTExN2Q5ZDJiNDY3MzAwMzdkODVhNjczNTZlMjVmOTdiNjI4MWM2MjAxMzcyYTZkMGY",
+      name: "REDEFINE Intensive Renewing Serum",
+      price: "225.00 ",
+      strikedOffPrice: "500.00",
+    },
+    {
+      imageUrl:
+        "https://www.rodanandfields.com/en-us/medias/ENFM030-Global-720x600-Desktop.jpg?context=bWFzdGVyfGltYWdlc3wzNzU0NHxpbWFnZS9qcGVnfGltYWdlcy9oMzQvaDQwLzEzNjkzOTY1NTk4NzUwLmpwZ3xlODg0YWM5YjBiZjM0M2I4MzMyYjE5NDMzMmZjMjg4ZjM1MDE1ZDg4YTI1NjFhNTJlNjg5ZWRjYWYzMTY5NDQ5",
+      name: "Total RF Serum",
+      price: "155.00 ",
+      strikedOffPrice: "350.00",
+    },
+    {
+      imageUrl:
+        "https://www.rodanandfields.com/en-us/medias/HAAGRS01-AAWA125-AATN125-AATT030-AAPM030-AAAPS01.jpg?context=bWFzdGVyfGltYWdlc3wxMDg1Nzd8aW1hZ2UvanBlZ3xpbWFnZXMvaDUxL2hjMC8xMjM5NjczMTQ2NTc1OC5qcGd8NDZmOTIwOTE4Yjc3OThhMWVhMWJkZTE4ZmQzM2YzM2E5ZGVmNDZjYWU5ODc3YjUyYjhkNGRkNGRlOTNmYTU3ZA",
+      name: "REDEFINE AMP IT UP SPECIAL",
+      price: "125.00 ",
+      strikedOffPrice: "325.00",
+    },
+    {
+      imageUrl:
+        "https://www.rodanandfields.com/en-us/medias/HRVAPS01-RVWA125-RVSS050-RVTTG50-AAAPS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w1NzcwMXxpbWFnZS9qcGVnfGltYWdlcy9oMDgvaDhhLzEyNzcxNTc5ODg3NjQ2LmpwZ3wzOWNmZWJjNjlhMzY1NjkxM2JiOThlMGUwNzJhYjk1NDQzY2E5NGQwNmNhMzIxZThkOTlhODI1YmZhNmUzYWIz",
+      name: "REVERSE AMP IT UP SPECIAL",
+      price: "199.00 ",
+      strikedOffPrice: "699.00",
+    },
+    {
+      imageUrl:
+        "https://www.rodanandfields.com/en-us/medias/AAEY015-1168X1168-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wyNDEyNTJ8aW1hZ2UvanBlZ3xpbWFnZXMvaDczL2g5ZC8xMzUzMzExNzU0NjUyNi5qcGd8NmFhZTU1MjBiMmI2Yjc1YTBjN2JjNjFhZDUwOGQ5OWQ1Zjk0YWI2ZDhlZjViZmQ5ZmMxNzY5MTU0MTFiZDY4ZQ",
+      name: "REDEFINE Multi-Function Eye Cream",
+      price: "99.00 ",
+      strikedOffPrice: "199.00",
+    },
+    {
+      imageUrl:
+        "https://www.rodanandfields.com/en-us/medias/ENEBS01-1168x1168-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w3ODYzNHxpbWFnZS9qcGVnfGltYWdlcy9oMTYvaDJmLzEzNTMzMTYzOTQ2MDE0LmpwZ3w4NmEzZDRiYzVkNjAyYmIyNDUxZjRiZDAzYmY0YzU0ZTkwYjUyMGEzZGJhYWRhYjUzNWVkZWFkNThjYzgwNzZk",
+      name: "Brow Defining Boost - Light",
+      price: "95.00 ",
+      strikedOffPrice: "295.00",
+    },
+    {
+      imageUrl:
+        "https://www.rodanandfields.com/en-us/medias/ENHEY15-detail.jpg?context=bWFzdGVyfGltYWdlc3wzNjA3NXxpbWFnZS9qcGVnfGltYWdlcy9oMjIvaGY2LzEzNTMzMTczNDgxNTAyLmpwZ3w0MzZiNDBmYmMyNGUwNjMyZjVhN2IyYThlZGM3YWE2ZWU0ZGZjYWRkNmFjYWM0YzMzMDc2NmMwN2M3YTI0MTlk",
+      name: "Active Hydration Bright Eye",
+      price: "215.00 ",
+      strikedOffPrice: "560.00",
+    },
+    {
+      imageUrl:
+        "https://www.rodanandfields.com/en-us/medias/HUNRJLP1-UNWA125-UNTJ125-UNTT030-UNSS030-ENHLSH01.jpg?context=bWFzdGVyfGltYWdlc3w2NTExOXxpbWFnZS9qcGVnfGltYWdlcy9oZjAvaGRmLzEyNzcxNTkwNzY2NjIyLmpwZ3xhZmIwNjkwMGRhNzY3YzM1N2Q3OTkxMjhlZTQzOTE0N2IxZGFlZmM5Y2Q2ZTM4OGYyMTQ2ZmZkYzJjYmM1NzM2",
+      name: "UNBLEMISH + LASH BOOST SPECIAL",
+      price: "165.00 ",
+      strikedOffPrice: "275.00",
+    },
+    {
+      imageUrl:
+        "https://www.rodanandfields.com/en-us/medias/ESMRW01-1168x1168-DESKTOP.jpg?context=bWFzdGVyfHJvb3R8Mzg4ODd8aW1hZ2UvanBlZ3xoMjEvaDhmLzg4MjE4NjQ2MjgyNTQuanBnfGMyNzU5ZTk3NDhjMzhhZjI2ZjlkYmRkNzVkOGM5MTU5NGVmYTJhNDE5ODhjYWNlZmM2YjdhMzM2ZDhiMGQ4NTM",
+      name: "ESSENTIALS INSTANT MAKEUP REMOVER WIPES",
+      price: "21.00 ",
+      strikedOffPrice: "121.00",
+    },
+    {
+      imageUrl:
+        "https://www.rodanandfields.com/en-us/medias/RCLBES1-720x600-desktop.jpg?context=bWFzdGVyfGltYWdlc3wxOTIwM3xpbWFnZS9qcGVnfGltYWdlcy9oYWYvaDY2LzkxNzEyMzg3NDgxOTAuanBnfDIzM2NlODM0ODNjNTgxYThiMDAyMGJlYWEwMzRiZmU4ZDJiNThkODM3OTFmMmJhZjNmMzFmNDE3ODk5OWVhMzg",
+      name: "RECHARGE + LASH BOOST SPECIAL",
+      price: "230.00",
+      strikedOffPrice: "256.00",
+    },
+    {
+      imageUrl:
+        "https://www.rodanandfields.com/en-us/medias/AAWA125-AATN125-AATT030-AAPM030-AAAPS01-1168x1168-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxMDg1Nzd8aW1hZ2UvanBlZ3xpbWFnZXMvaDMyL2g0OC8xMjM5NjczMTQzMjk5MC5qcGd8YjM5NjlhNjM0MjM3ZDA0M2UwMGVmOTk5YmI0OWFhMjIyODlhN2YxOTFiYjAxYWFlOGQ5NjYyN2NkYjllYTQ3Mg",
+      name: "REDEFINE AMP IT UP SPECIAL",
+      price: "359.00",
+      strikedOffPrice: "400.00",
+    },
+    {
+      imageUrl:
+        "https://www.rodanandfields.com/en-us/medias/HRVAPS01-RVWA125-RVSS050-RVTTG50-AAAPS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w1NzcwMXxpbWFnZS9qcGVnfGltYWdlcy9oMDgvaDhhLzEyNzcxNTc5ODg3NjQ2LmpwZ3wzOWNmZWJjNjlhMzY1NjkxM2JiOThlMGUwNzJhYjk1NDQzY2E5NGQwNmNhMzIxZThkOTlhODI1YmZhNmUzYWIz",
+      name: "REVERSE AMP IT UP SPECIAL",
+      price: "338.00",
+      strikedOffPrice: "376.00",
+    },
+  ];
+
+  var imagediv = document.createElement("div");
+
+  imagediv.setAttribute("id", "productdiv");
+  var cartArr = JSON.parse(localStorage.getItem("cartArr")) || [];
+
+  var wishArr = JSON.parse(localStorage.getItem("wishARR")) || [];
+
+  data.map(function (elem) {
+    var div = document.createElement("div"); //div1
+    div.setAttribute("class", "boxshadow");
+    // image
+    var pic = document.createElement("img");
+    pic.setAttribute("src", elem.imageUrl);
+    pic.setAttribute("id", "pic");
+
+    //,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+    // name of item
+    var name = document.createElement("p");
+    name.textContent = elem.name;
+    name.setAttribute("id", "namestyle");
+
+    var div2 = document.createElement("div");
+    div2.setAttribute("id", "formakingflex");
+    // price creation
+    var dprice = document.createElement("p");
+    dprice.textContent = "$" + elem.price;
+    dprice.setAttribute("class", "pricestyle");
+
+    var p2 = document.createElement("p");
+    p2.textContent = "$"+elem.strikedOffPrice;
+    p2.setAttribute("class", "offpricestyle");
+    p2.style.textDecoration = "line-through";
+
+    var div3 = document.createElement("div");
+
+    div3.setAttribute("id", "buttonflex");
+    var btn1 = document.createElement("button");
+    btn1.textContent = "ADD TO BAG";
+    btn1.setAttribute("class", "btn1style");
+
+    btn1.addEventListener("click", function () {
+      addToBag(elem);
+    });
+
+    var btn2 = document.createElement("button");
+    btn2.textContent = "ADD TO WISHLIST";
+    btn2.setAttribute("class", "btn2style");
+
+    btn2.addEventListener("click", function () {
+      addToWish(elem);
+    });
+
+    // first append both price into inner div
+    div2.append(dprice, p2);
+
+    div3.append(btn1, btn2);
+
+    div.append(pic, name, div2, div3);
+    imagediv.append(div);
+    document.getElementById("cont").append(imagediv);
+  });
+
+  function addToBag(elem) {
+    //console.log(elem);
+    cartArr.push(elem);
+    localStorage.setItem("cartARR", JSON.stringify(cartArr));
+    //alert("Added Successfully!");
+  }
+
+  function addToWish(elem) {
+    wishArr.push(elem);
+    localStorage.setItem("wishARR", JSON.stringify(wishArr));
+    //alert("Added to Wishlist!");
+    //console.log(elem);
+  }
+</script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      { pageLanguage: "en" },
+      "google_translate_element"
+    );
+  }
+</script>
+
+<script
+  type="text/javascript"
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+></script>

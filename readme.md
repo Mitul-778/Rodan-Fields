@@ -78,7 +78,7 @@ git clone https://github.com/Mitul-778/Rodan-Fields.git
 
 
 
-### <u>You can read more about our project on our blog : <a href="https://medium.com/@mitulpatel778/our-first-project-with-team-work-7fb683cea7ff" target="_blank">Clone of Internshala</a> </u>
+### <u>You can read more about our project on our blog : <a href="https://medium.com/@mitulpatel778/our-first-project-with-team-work-7fb683cea7ff" target="_blank">Clone of Rodan + Fields</a> </u>
 
 # Thank You :sparkling_heart:
 
